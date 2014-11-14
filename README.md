@@ -5,7 +5,7 @@ Plugin that pre-load images in a background-process, out of the DOM, using promi
 
 Aren't you sick and tired of loading your image files inline? By doing this, your DOM become super-heavy and no animation ever will be soft and smooth at the very loading of the document.
 
--> What this plugin does is receive a list of images from a jQuery selector or an Array, download them out of DOM, put them in cache, and then, fire some callbacks to put them in the DOM.
+-> What this plugin does is receive a list of images urls from a jQuery selector or an Array, download them out of DOM, put them in cache, and then, fire some callbacks to put them in the DOM.
 -> Even if you don't use the build-in callbacks, after loading them, you have them on cache, now, just do your magic.
 <hr />
 -> Easy like that <br />
@@ -15,6 +15,8 @@ Aren't you sick and tired of loading your image files inline? By doing this, you
 <br /><br />
 -> And it has some parameters
 <code><pre>
+  <figure class=".toLoad" data-src="http://foobar.com/assets/img/johndue.jpg"></figure>  
+
   $('.toLoad').Mloader({
       onReady: function () {
           console.log('all done');

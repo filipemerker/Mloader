@@ -16,6 +16,9 @@ Aren't you sick and tired of loading your image files inline? By doing this, you
 -> And it has some parameters
 <code>
 <pre>
+  //assuming that you have some elements like this on your DOM
+  //class=".toLoad" data-src="http://foobar.com/assets/img/johndue.jpg"
+  <br />
   $('.toLoad').Mloader({
       onReady: function () {
           console.log('all done');
